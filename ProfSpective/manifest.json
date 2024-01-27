@@ -1,6 +1,6 @@
 {
     "name": "ProfSpective",
-    "version": "",      
+    "version": "0.1.0",      
     "description": "Test desc",
     "permissions": ["storage", "tabs"],
     "host_permissions": ["https://*.mcgill.ca/study/*/courses/*"],
@@ -15,10 +15,10 @@
         }
     
     ],
-    "web_accessible_resources" : [
+    "web_accessible_resources": [
         {
             "resources": [
-
+                "icons/test.png"
             ],
             "matches": ["https://*.mcgill.ca/study/*/courses/*"]
         }
