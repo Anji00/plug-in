@@ -1,0 +1,36 @@
+{
+    "name": "ProfSpective",
+    "version": "",      
+    "description": "Test desc",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.mcgill.ca/study/*/courses/*"],
+    "background" : {
+        "service_worker": "bg.js"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.mcgill.ca/study/*/courses/*"],
+            "js":["content_script.js"]
+        }
+    
+    ],
+    "web_accessible_resources" : [
+        {
+            "resources": [
+
+            ],
+            "matches": ["https://*.mcgill.ca/study/*/courses/*"]
+        }
+    ],
+    "action" : {
+        "default_icon" : {
+
+        },
+        "default_title": "ProfSpective",
+        "default_popup":"popup.js"
+    },
+    "manifest_version": 3
+
+
+}
