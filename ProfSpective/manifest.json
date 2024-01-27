@@ -17,19 +17,25 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": [
-                "icons/test.png"
-            ],
-            "matches": ["https://*.mcgill.ca/study/*/courses/*"]
+          "resources": [
+            "assets/bookmark.png",
+            "assets/play.png",
+            "assets/delete.png",
+            "assets/save.png"
+          ],
+          "matches": ["https://*.youtube.com/*"]
         }
-    ],
-    "action" : {
+      ],
+    
+     
+    "action": {
         "default_icon" : {
 
         },
         "default_title": "ProfSpective",
-        "default_popup":"popup.js"
+        "default_popup":"popup.html"
     },
+
     "manifest_version": 3
 
 
